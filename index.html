@@ -1,0 +1,198 @@
+<!-- ========================= -->
+<!-- FICHIER : index.html -->
+<!-- THÈME : ROSE & OR (ACCUEIL) -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accueil</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff4fa0, #ffd700);
+            color: #3a1a2b;
+        }
+
+        /* ===== NAV ===== */
+
+        nav {
+            background: rgba(255, 215, 0, 0.25);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #3a1a2b;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* ===== HERO ===== */
+
+        header {
+            text-align: center;
+            padding: 80px 20px 50px;
+        }
+
+        header h1 {
+            font-size: 55px;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 22px;
+            color: #3a1a2b;
+        }
+
+        /* ===== INTRO COPINE ===== */
+
+        .intro {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.35);
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .intro h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #b8860b;
+        }
+
+        .intro p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* ===== LINKS CARDS ===== */
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 90%;
+            max-width: 1100px;
+            margin: 50px auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.4);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.6);
+        }
+
+        .card a {
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            color: #3a1a2b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="fleurs.html">Fleurs</a></li>
+            <li><a href="animaux.html">Animaux</a></li>
+            <li><a href="sejour.html">Séjour</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>💖 Son Univers 💖</h1>
+        <p>Un petit site dédié à ma copine que j’aime ✨</p>
+    </header>
+
+    <!-- INTRO COPINE -->
+    <section class="intro">
+        <h2>👩‍❤️‍👨 Ina</h2>
+        <p>
+            Mon bébé d'amour que j'aime plus que tout, ce site t'es dédié,
+            pour montrer à quel point je t'aime et que je veux qu'on soit ensemble pour toujours !
+            Je veux que ce site te mette en valeur et qu'il te remémore des souvenis !!
+        </p>
+    </section>
+
+    <!-- NAVIGATION VERS LES PAGES -->
+    <section class="links">
+
+        <div class="card">
+            <a href="fleurs.html">🌸 Fleurs</a>
+            <p>Une sélection rose et girly de ses fleurs préférées</p>
+        </div>
+
+        <div class="card">
+            <a href="animaux.html">🐾 Animaux</a>
+            <p>Ses animaux favoris et leurs histoires</p>
+        </div>
+
+        <div class="card">
+            <a href="sejour.html">🌴 Séjour Martinique</a>
+            <p>Un voyage rempli d’émotions et de souvenirs</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        💖 Rose & Or • Amour • Souvenirs • Moments précieux 💖
+    </footer>
+
+</body>
+
+</html>

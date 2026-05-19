@@ -1,0 +1,227 @@
+<!-- ========================= -->
+<!-- FICHIER : fleurs.html -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fleurs</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffd6e7, #fff0f6);
+            color:#5c2144;
+        }
+
+        /* ===== NAVBAR ===== */
+
+        nav{
+            background:#ff4fa0;
+            padding:20px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            position:sticky;
+            top:0;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            gap:30px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#ffe4f2;
+            transform:scale(1.1);
+        }
+
+        /* ===== HEADER ===== */
+
+        header{
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        header h1{
+            font-size:60px;
+            color:#ff1493;
+            margin-bottom:15px;
+            text-shadow:2px 2px 5px rgba(255,255,255,0.8);
+        }
+
+        header p{
+            font-size:20px;
+            color:#7a3058;
+        }
+
+        /* ===== SECTION FLEURS ===== */
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding-bottom:60px;
+        }
+
+        .flower-card{
+            background:white;
+            border-radius:25px;
+            overflow:hidden;
+            margin-bottom:40px;
+            box-shadow:0 10px 25px rgba(255,105,180,0.25);
+            transition:0.4s;
+        }
+
+        .flower-card:hover{
+            transform:translateY(-8px);
+            box-shadow:0 15px 35px rgba(255,20,147,0.35);
+        }
+
+        .flower-card img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+        }
+
+        .flower-content{
+            padding:30px;
+        }
+
+        .flower-content h2{
+            font-size:38px;
+            margin-bottom:15px;
+            color:#ff1493;
+        }
+
+        .flower-content p{
+            font-size:18px;
+            line-height:1.7;
+        }
+
+        /* ===== PETITS DETAILS GIRLY ===== */
+
+        .emoji{
+            font-size:25px;
+        }
+
+        footer{
+            background:#ff4fa0;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="fleurs.html">Fleurs</a></li>
+            <li><a href="animaux.html">Animaux</a></li>
+            <li><a href="sejour.html">Séjour</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HEADER ===== -->
+
+    <header>
+        <h1>🌸 Ses Fleurs Préférées 🌸</h1>
+        <p>Une sélection des plus belles fleurs 💖</p>
+    </header>
+
+    <!-- ===== CONTENU ===== -->
+
+    <section class="container">
+
+        <!-- LOTUS -->
+
+        <div class="flower-card">
+
+            <!-- Image temporaire -->
+            <img src="https://img.fotocommunity.com/fleur-de-lotus-ec843c83-0e87-4072-ba6a-75030da7a4ad.jpg?height=1080" alt="Lotus">
+
+            <div class="flower-content">
+                <h2>1. Lotus <span class="emoji">💗</span></h2>
+
+                <p>
+                    Le lotus est une fleur élégante et apaisante.
+                    Il symbolise la pureté, la beauté et le calme.
+                    Avec ses magnifiques pétales roses, il est clairement
+                    la meilleure fleur de cette sélection.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- TULIPE -->
+
+        <div class="flower-card">
+
+            <!-- Image temporaire -->
+            <img src="https://cdn.pixabay.com/photo/2022/11/06/13/18/tulip-7573976_1280.jpg" alt="Tulipe">
+
+            <div class="flower-content">
+                <h2>2. Tulipe <span class="emoji">🌷</span></h2>
+
+                <p>
+                    La tulipe apporte une ambiance douce et romantique.
+                    Très connue pour ses couleurs pastel et son style élégant,
+                    elle représente parfaitement le printemps et la bonne humeur.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- PIVOINE -->
+
+        <div class="flower-card">
+
+            <!-- Image temporaire -->
+            <img src="https://m.media-amazon.com/images/I/913aFcSf8FL._AC_SL1500_.jpg" alt="Pivoine">
+
+            <div class="flower-content">
+                <h2>3. Pivoine <span class="emoji">💕</span></h2>
+
+                <p>
+                    La pivoine est une fleur très raffinée et volumineuse.
+                    Son aspect délicat et ses tons roses en font une fleur
+                    parfaite pour une page girly et élégante.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+
+    <footer>
+        <p>🌸 Site fleuri & girly 🌸</p>
+    </footer>
+
+</body>
+</html>

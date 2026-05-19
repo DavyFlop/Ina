@@ -1,0 +1,305 @@
+<!-- ========================= -->
+<!-- FICHIER : sejour.html -->
+<!-- THÈME : MARTINIQUE (NOIR / VERT / ROUGE) -->
+<!-- ========================= -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Séjour Martinique</title>
+
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000000, #0f8f3d, #c1121f);
+            color: white;
+        }
+
+        /* ===== NAVBAR ===== */
+
+        nav {
+            background: rgba(0, 0, 0, 0.75);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeaa7;
+        }
+
+        /* ===== HEADER ===== */
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 22px;
+        }
+
+        /* ===== DRAPEAU ===== */
+
+        .flag {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .flag-color {
+            width: 90px;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        .black {
+            background: #000;
+        }
+
+        .green {
+            background: #0f8f3d;
+        }
+
+        .red {
+            background: #c1121f;
+        }
+
+        /* ===== CONTAINER ===== */
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding-bottom: 60px;
+        }
+
+        /* ===== CARD ===== */
+
+        .card {
+            background: rgba(0, 0, 0, 0.35);
+            border-radius: 25px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 30px;
+        }
+
+        .card-content h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+            color: #7dff9b;
+        }
+
+        .card-content p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* ===== ITW ===== */
+
+        .itw {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 25px;
+            margin-top: 50px;
+        }
+
+        .itw h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #ff4d4d;
+        }
+
+        .itw p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* ===== FOOTER ===== */
+
+        footer {
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="fleurs.html">Fleurs</a></li>
+            <li><a href="animaux.html">Animaux</a></li>
+            <li><a href="sejour.html">Séjour</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+        <h1>🌴 Séjour en Martinique 🌴</h1>
+        <p>Un voyage rempli d’émotions et de souvenirs incroyables</p>
+
+        <div class="flag">
+            <div class="flag-color black"></div>
+            <div class="flag-color green"></div>
+            <div class="flag-color red"></div>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="container">
+
+        <!-- COUPLE -->
+        <div class="card">
+            <img src="images/Twins.jpeg" alt="Couple">
+
+            <div class="card-content">
+                <h2>❤️ Ma copine et moi</h2>
+                <p>
+                    Un séjour inoubliable rempli de moments heureux, de rires et de souvenirs précieux ensemble.
+                </p>
+            </div>
+        </div>
+
+        <!-- CREPES -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?q=80&w=1200&auto=format&fit=crop"
+                alt="Crêpes">
+
+            <div class="card-content">
+                <h2>🥞 Crêpes</h2>
+                <p>
+                    Nos soirées avec de bonnes crêpes à déguster.
+                </p>
+            </div>
+        </div>
+
+        <!-- PIZZA -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1200&auto=format&fit=crop"
+                alt="Pizza">
+
+            <div class="card-content">
+                <h2>🍕 Pizza & Friandises</h2>
+                <p>
+                    Ou bien des pizas et friand.
+                </p>
+            </div>
+        </div>
+
+        <!-- PLAGE -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop"
+                alt="Plage">
+
+            <div class="card-content">
+                <h2>🏝️ Plage - Schoelcher</h2>
+                <p>
+                    Malgré une grosse pluie, un moment de plage très agréable avec mon bb.
+                </p>
+            </div>
+        </div>
+
+        <!-- CINEMA -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200&auto=format&fit=crop"
+                alt="Cinéma">
+
+            <div class="card-content">
+                <h2>🎬 Cinéma</h2>
+                <p>
+                    Jumpers castor castor castor buche buche buche coeur coeur coeur
+                </p>
+            </div>
+        </div>
+
+        <!-- ORCHIDEE -->
+        <div class="card">
+            <img src="images/orchydée.jpeg" alt="Orchidée">
+
+            <div class="card-content">
+                <h2>🌸 Orchidée</h2>
+                <p>
+                    Une image qui font remonter des souvenirs.. et rencontres.
+                </p>
+            </div>
+        </div>
+
+        <!-- ITW -->
+        <div class="itw">
+            <h2>🎤 Mon ressenti</h2>
+            <p>
+                Ce séjour en Martinique a été exceptionnel. J’ai vécu des jours de folie !! Malgré des problèmes de
+                santé (malade) j'ai pleinement profité de chaque instant avec ma copine devant de jour en jour plus
+                amoureux d'elle. Encore plus belle en vrai elle a pu exprimer son amour et j'ai pu lui exprimer le mien,
+                j'ai ressenti pour la première fois de ma vie ce que c'était d'être aimé et je lui en suis éternellement
+                reconnaissant, jamais j'aurais pensé que j'étais capable de la rejoindre, mon seul regret est de ne pas
+                être venu la voir plus tôt, mon bb d'amour tu es la meilleure femme au monde rempli d'inombrable
+                qualités, je t'aime plus que touttttt loveeeeee j'ai tellement de chance de t'avoir !!! Je suis marqué à
+                vie.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        🌴 Martinique • Noir • Vert • Rouge • Souvenirs 🌴
+    </footer>
+
+</body>
+
+</html>
