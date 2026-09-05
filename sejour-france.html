@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Son séjour en France</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #050b2e, #102c63, #ffffff);
+            color: #222;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4d6d;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        .flag {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        /* ================= INTRO ================= */
+
+        .intro {
+            background: white;
+            width: 90%;
+            max-width: 900px;
+            margin: 0 auto 50px;
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .intro h2 {
+            color: #1d4e89;
+            margin-bottom: 15px;
+        }
+
+        /* ================= JOURNAL ================= */
+
+        .journal {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .jour {
+            background: white;
+            margin-bottom: 40px;
+            padding: 25px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .jour h2 {
+            color: #174ea6;
+            font-size: 27px;
+        }
+
+        .jour h2::first-letter {
+            color: #e63946;
+        }
+
+        .jour p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        /* ================= IMAGES ================= */
+
+        .jour img {
+            width: 100%;
+            max-width: 750px;
+            max-height: 500px;
+
+            height: auto;
+            object-fit: contain;
+
+            display: block;
+            margin: auto;
+
+            border-radius: 20px;
+        }
+
+        .image-placeholder {
+            background: linear-gradient(135deg, #e9ecef, #dbe4f0);
+            border: 3px dashed #174ea6;
+            border-radius: 20px;
+
+            width: 100%;
+            max-width: 750px;
+            min-height: 250px;
+
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: #174ea6;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* ================= INTERVIEW ================= */
+
+        .interview {
+            background: white;
+            width: 90%;
+            max-width: 900px;
+
+            margin: 70px auto;
+            padding: 40px;
+
+            border-radius: 25px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .interview h2 {
+            text-align: center;
+            color: #e63946;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            margin-bottom: 25px;
+        }
+
+        .question strong {
+            color: #174ea6;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: rgba(0, 0, 0, 0.85);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 600px) {
+
+            nav ul {
+                gap: 15px;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            header {
+                padding: 50px 15px;
+            }
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            header p {
+                font-size: 17px;
+            }
+
+            .jour {
+                padding: 18px;
+            }
+
+            .jour h2 {
+                font-size: 22px;
+            }
+
+            .jour p {
+                font-size: 15px;
+            }
+
+            .image-placeholder {
+                min-height: 180px;
+                font-size: 16px;
+            }
+
+            .jour video {
+                width: 100%;
+                max-width: 750px;
+                max-height: 500px;
+                display: block;
+                margin: auto;
+                border-radius: 20px;
+            }
+
+            .interview {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="fleurs.html">Fleurs</a></li>
+            <li><a href="animaux.html">Animaux</a></li>
+            <li><a href="sejour.html">Séjour Martinique</a></li>
+            <li><a href="dessins.html">Dessins</a></li>
+            <li><a href="sejour-france.html">Séjour France</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="flag">
+            🇫🇷
+        </div>
+
+        <h1>Son séjour en France</h1>
+
+        <p>
+            33 jours, plein de souvenirs, de découvertes et d'émotions ❤️
+        </p>
+
+    </header>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="intro">
+
+        <h2>Un séjour riche en émotions</h2>
+
+        <p>
+            Après avoir quitté la Martinique, direction la France pour
+            une aventure de plusieurs semaines. Entre sorties, découvertes,
+            activités, repas, moments en famille et petites galères,
+            chaque journée avait son histoire.
+        </p>
+
+    </section>
+
+
+    <!-- ================= JOURNAL ================= -->
+
+    <main class="journal">
+
+
+        <!-- JOUR 1 -->
+
+        <article class="jour">
+
+            <h2>Jour 1 : Arrivée en France</h2>
+
+            <p>
+                Une arrivée plutôt fatigante : beaucoup d'attente pour
+                arriver sur Nantes, mais malgré le KO, une piscine était là pour
+                se détendre et se baigner.
+            </p>
+            <img src="images/france-jour1.jpg" alt="Jour 1 - Arrivée en France">
+
+        </article>
+
+
+        <!-- JOUR 4 -->
+
+        <article class="jour">
+
+            <h2>Jour 4 : Soirée pizza & balade au parc du Loiry 🍕🌳</h2>
+            <p>
+                Une soirée tranquille avec une bonne pizza suivie
+                d'une balade au parc du Loiry.
+            </p>
+            <img src="images/france-jour4.jpg" alt="Jour 4 - Soirée Pizza">
+
+        </article>
+
+
+        <!-- JOUR 5 -->
+
+        <article class="jour">
+
+            <h2>Jour 5 : Planète Sauvage 🦁</h2>
+
+            <p>
+                Une journée à Planète Sauvage à la découverte des animaux
+                et de leurs différents environnements.
+            </p>
+            <img src="images/france-jour5.jpg" alt="Jour 5 - Soirée Pizza">
+
+        </article>
+
+
+        <!-- JOUR 6 -->
+
+        <article class="jour">
+
+            <h2>Jour 6 : Entraînement 🏃</h2>
+
+            <p>
+                Une journée placée sous le signe du sport avec une séance
+                d'entraînement.
+            </p>
+
+            <video controls>
+                <source src="videos/france-jour6.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+        </article>
+
+
+        <!-- JOUR 9 -->
+
+        <article class="jour">
+
+            <h2>Jour 9 : Ciné + balade à Montbert 🎬🌳</h2>
+
+            <p>
+                Une sortie cinéma suivie d'une balade à Montbert.
+            </p>
+
+            <video controls>
+                <source src="videos/france-jour9.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+
+        </article>
+
+        <article class="jour">
+
+            <h2>Jour 9 : Bouquet de fleur</h2>
+
+            <p>
+                Après être parti sans prévenir, tu m'as revu avec ce bouquet en main.
+            </p>
+            <img src="images/france-jour9.jpg" alt="Jour 9 - Bouquet">
+
+        </article>
+
+
+        <!-- JOUR 10 -->
+
+        <article class="jour">
+
+            <h2>Jour 10 : Boutiques 🛍️</h2>
+
+            <p>
+                Une journée consacrée aux boutiques et au shopping.
+            </p>
+            <img src="images/france-jour10.jpg" alt="Jour 10 - Boutiques">
+
+        </article>
+
+
+        <!-- JOUR 12 -->
+
+        <article class="jour">
+
+            <h2>Jour 12 : Cascade 🌊</h2>
+
+            <p>
+                Découverte de la cascade d'Aigrefeuille et moment au milieu de la nature.
+            </p>
+
+            <video controls>
+                <source src="videos/france-jour12.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+
+        </article>
+
+
+        <!-- JOUR 13 -->
+
+        <article class="jour">
+
+            <h2>Jour 13 : Musée d'art de Nantes 🎨</h2>
+
+            <p>
+                Une journée culturelle avec la découverte d'un musée d'art, avec en illustration la plus belle d'entre
+                elles ❤️
+            </p>
+            <img src="images/france-jour13.jpg" alt="Jour 13 - Toi">
+
+        </article>
+
+
+        <!-- JOUR 14 -->
+
+        <article class="jour">
+
+            <h2>Jour 14 : Journée compliquée</h2>
+
+            <p>
+                Une journée bien fournie en émotions : La piscine, la conduite, le nettoyage de la voiture ainsi que le
+                repas ensemble a pu aténuer certains évènements de cette journée.
+            </p>
+            <img src="images/france-jour14.jpg" alt="Jour 14 - Repas">
+
+        </article>
+
+
+        <!-- JOUR 15 -->
+
+        <article class="jour">
+
+            <h2>Jour 15 : Bokit + patinoire 🥪⛸️</h2>
+
+            <p>
+                Un bon bokit avant de partir profiter d'une session
+                à la patinoire dans un froid dans lequel tu n'as pas l'habitude.
+            </p>
+
+            <img src="images/france-jour15.jpg" alt="Jour 15 - Patinoire">
+
+        </article>
+
+
+        <!-- JOUR 16 -->
+
+        <article class="jour">
+
+            <h2>Jour 16 : Prison Island + Memphis 🔐🍔</h2>
+
+            <p>
+                Une journée pleine en énergie avec au programme Prison Island,
+                puis un repas chez Memphis entre cousins.
+            </p>
+
+            <img src="images/france-jour16.jpg" alt="Jour 16 - Cousinade">
+
+        </article>
+
+        <!-- JOUR 17 -->
+
+        <!-- <article class="jour">
+
+            <h2>Jour 17 : Hati + Machines de l'île + Pommeraie + commerce 🚶</h2>
+
+            <p>
+                Une journée bien chargée entre Hati, les Machines de l'île,
+                la Pommeraie et quelques passages dans les commerces.
+            </p>
+            <img src="images/france-jour17.jpg" alt="Jour 17 - ???">
+
+        </article> -->
+
+
+        <!-- JOUR 19 -->
+
+        <article class="jour">
+
+            <h2>Jour 19 : Garage + Spider-Man au cinéma 🚗🎬</h2>
+
+            <p>
+                Passage au garage pour la voiture, puis direction le cinéma
+                pour Spider-Man.
+            </p>
+
+            <img src="images/france-jour19.jpg" alt="Jour 19 - Spider-Man">
+
+        </article>
+
+
+        <!-- JOUR 21 -->
+
+
+        <article class="jour">
+
+            <h2>Jour 21 : Pain au beurre 🥖</h2>
+
+            <p>
+                Création d'un pain au beurre et de pommes canelles grâce à ma tante.
+            </p>
+
+            <img src="images/france-jour21.jpg" alt="Jour 21 - Pain au beurre">
+
+        </article>
+
+        <article class="jour">
+
+            <h2>Jour 21 : Girlfriend Day🚗</h2>
+
+            <p>
+                Restaurant le soir pour la journée internationale de la petite
+                amie, puis la fin de la soirée en voiture.
+            </p>
+
+            <img src="images/france-jour21.webp" alt="Jour 21 - GF Day">
+
+        </article>
+
+
+        <!-- JOUR 23 -->
+
+        <article class="jour">
+
+            <h2>Jour 23 : Crêperie puis cinéma 🥞🎬</h2>
+
+            <p>
+                Une bonne crêperie suivie d'une séance de cinéma.
+            </p>
+
+            <img src="images/france-jour23.jpg" alt="Jour 23 - Michael">
+
+        </article>
+
+
+        <!-- JOUR 26 -->
+
+        <article class="jour">
+
+            <h2>Jour 26 : Mowgli 🐺</h2>
+
+            <p>
+                Une journée films avec notamment Mowgli.
+            </p>
+
+            <img src="images/france-jour26.jpg" alt="Jour 26 - Mowgli">
+
+        </article>
+
+
+        <!-- JOUR 28 -->
+
+        <article class="jour">
+
+            <h2>Jour 28 : « La vie sur notre planète » 🌍</h2>
+
+            <p>
+                Une journée documentaire avec
+                <em>La vie sur notre planète</em>.
+            </p>
+
+            <img src="images/france-jour28.jpg" alt="Jour 28 - documentaire">
+
+        </article>
+
+
+        <!-- JOUR 30 -->
+
+        <article class="jour">
+
+            <h2>Jour 30 : Bowling + arcade 🎳🕹️</h2>
+
+            <p>
+                Une journée pleine de jeux avec une partie de bowling
+                et de l'arcade.
+            </p>
+
+            <video controls>
+                <source src="videos/france-jour30.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+
+        </article>
+
+
+        <!-- JOUR 32 -->
+
+        <article class="jour">
+
+            <h2>Jour 32 : Éclipse + étoiles filantes 🌙✨</h2>
+
+            <p>
+                Une soirée particulière avec une éclipse et l'observation
+                des étoiles filantes.
+            </p>
+
+            <img src="images/france-jour32.webp" alt="Jour 32 - Etoiles filantes">>
+
+        </article>
+
+
+    </main>
+
+
+    <!-- ================= INTERVIEW ================= -->
+
+    <section class="interview">
+
+        <h2>🎤 Petite interview</h2>
+
+        <div class="question">
+
+            <strong>Quel est ton meilleur souvenir de ce séjour ?</strong>
+
+            <p>
+                À compléter avec son propre ressenti...
+            </p>
+
+        </div>
+
+
+        <div class="question">
+
+            <strong>Quelle activité as-tu préférée ?</strong>
+
+            <p>
+                À compléter avec son propre ressenti...
+            </p>
+
+        </div>
+
+
+        <div class="question">
+
+            <strong>Quel moment t'a le plus marquée ?</strong>
+
+            <p>
+                À compléter avec son propre ressenti...
+            </p>
+
+        </div>
+
+
+        <div class="question">
+
+            <strong>Qu'est-ce que tu retiens de ces 33 jours ?</strong>
+
+            <p>
+                À compléter avec son propre ressenti...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FIN ================= -->
+
+    <footer>
+
+        <h2>❤️ Fin du séjour ❤️</h2>
+
+        <p>
+            33 jours, des souvenirs plein la tête.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
