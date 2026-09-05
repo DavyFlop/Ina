@@ -136,6 +136,75 @@
             margin-top: 40px;
             background: rgba(255, 255, 255, 0.2);
         }
+
+        .compteur-couple {
+            width: 90%;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 35px 20px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.12);
+            border: 2px solid rgba(255, 105, 180, 0.5);
+            border-radius: 25px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .compteur-couple h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .compteur-couple p {
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .compteur {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .temps {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .temps span {
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .temps small {
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        .separateur {
+            font-size: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .compteur {
+                gap: 12px;
+            }
+
+            .temps span {
+                font-size: 32px;
+            }
+
+            .temps small {
+                font-size: 11px;
+            }
+
+            .separateur {
+                font-size: 22px;
+            }
+        }
     </style>
 
 </head>
@@ -168,6 +237,33 @@
             pour montrer à quel point je t'aime et que je veux qu'on soit ensemble pour toujours !
             Je veux que ce site te mette en valeur et qu'il te remémore des souvenis !!
         </p>
+    </section>
+
+    <section class="compteur-couple">
+        <h2>❤️ Notre histoire ❤️</h2>
+
+        <p>Ensemble depuis le 7 janvier 2026</p>
+
+        <div class="compteur">
+            <div class="temps">
+                <span id="annees">0</span>
+                <small>AN</small>
+            </div>
+
+            <div class="separateur">•</div>
+
+            <div class="temps">
+                <span id="mois">0</span>
+                <small>MOIS</small>
+            </div>
+
+            <div class="separateur">•</div>
+
+            <div class="temps">
+                <span id="jours">0</span>
+                <small>JOURS</small>
+            </div>
+        </div>
     </section>
 
     <!-- NAVIGATION VERS LES PAGES -->
@@ -206,5 +302,5 @@
     </footer>
 
 </body>
-
+<script src="compteur.js"></script>
 </html>
